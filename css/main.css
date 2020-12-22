@@ -747,7 +747,7 @@ header {
   opacity: 0; }
 
 .thank_modal {
-  max-width: 480px;
+  max-width: 450px;
   margin: 0 auto;
   position: relative;
   padding: 30px;
@@ -775,11 +775,12 @@ header {
         -ms-flex-pack: center;
             justify-content: center; }
     .thank_modal .thank_wrap .logo_modal {
-      margin-top: 20px;
-      margin-bottom: 15px; }
+      margin-top: 25px;
+      margin-bottom: 35px; }
       @media (max-width: 990px) {
         .thank_modal .thank_wrap .logo_modal {
-          margin-top: 30px; } }
+          margin-top: 30px;
+          margin-bottom: 20px; } }
     .thank_modal .thank_wrap .modal_title {
       color: #2f313a;
       margin-bottom: 20px;
@@ -790,7 +791,8 @@ header {
           margin-bottom: 15px; } }
     .thank_modal .thank_wrap .modal_text {
       color: #2f313a;
-      font: 400 1rem 'Montserrat', sans-serif; }
+      margin-bottom: 20px;
+      font: 400 1rem/26px 'Montserrat', sans-serif; }
       @media (max-width: 990px) {
         .thank_modal .thank_wrap .modal_text {
           margin-bottom: 30px; } }

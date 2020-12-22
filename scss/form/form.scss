@@ -246,7 +246,7 @@
 }
 
 .thank_modal {
-    max-width: 480px;
+    max-width: 450px;
     margin: 0 auto;
     position: relative;
     padding: 30px;
@@ -261,10 +261,11 @@
         align-items: center;
         justify-content: center;
         .logo_modal {
-            margin-top: 20px;
-            margin-bottom: 15px;
+            margin-top: 25px;
+            margin-bottom: 35px;
             @media (max-width: 990px) {
                 margin-top: 30px;
+                margin-bottom: 20px;
             }
         }
         .modal_title {
@@ -278,7 +279,8 @@
         }
         .modal_text {
             color: #2f313a;
-            font: 400 1rem 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+            font: 400 1rem/26px 'Montserrat', sans-serif;
             @media (max-width: 990px) {
                 margin-bottom: 30px;
             }
