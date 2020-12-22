@@ -282,6 +282,7 @@ header {
                   appearance: none;
           width: 100%;
           padding: 20px;
+          background: transparent;
           border-radius: 5px;
           border: 2px solid #e8e8e8;
           -webkit-box-sizing: border-box;
