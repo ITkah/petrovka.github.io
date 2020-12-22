@@ -523,6 +523,12 @@ header {
   padding-bottom: 10px;
   overflow-x: scroll;
   width: 350px; }
+  @media (max-width: 576px) {
+    .output_slider {
+      width: 385px; } }
+  @media (max-width: 380px) {
+    .output_slider {
+      width: 345px; } }
   @media (max-width: 355px) {
     .output_slider {
       width: 290px; } }

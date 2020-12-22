@@ -382,6 +382,15 @@
     padding-bottom: 10px;
     overflow-x: scroll;
     width: 350px;
+    @media (max-width: 576px) {
+        width: 385px;
+    }
+    @media (max-width: 380px) {
+        width: 345px;
+    }
+    @media (max-width: 355px) {
+        width: 290px;
+    }
     .slider_title {
         text-align: center;
         color: #2f313a;
