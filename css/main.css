@@ -523,6 +523,9 @@ header {
   padding-bottom: 10px;
   overflow-x: scroll;
   width: 350px; }
+  @media (max-width: 355px) {
+    .output_slider {
+      width: 290px; } }
   .output_slider .slider_title {
     text-align: center;
     color: #2f313a;
