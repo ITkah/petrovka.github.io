@@ -34,6 +34,19 @@ button {
     }
 }
 
+.padding_mob {
+    padding: 0 70px;
+    @media (max-width: 1280px) {
+        padding: 0 45px;
+    }
+    @media (max-width: 990px) {
+        padding: 0 15px;
+    }
+    @media (max-width: 576px) {
+        padding: 0;
+    }
+}
+
 .margin {
     margin-bottom: 80px;
     @media (max-width: 990px) {
