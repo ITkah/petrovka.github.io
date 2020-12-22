@@ -5,7 +5,7 @@
     margin-bottom: -90px;
     @media (max-width: 990px) {
         top: -210px;
-        margin-bottom: -60px;
+        margin-bottom: -110px;
     }
 }
 
@@ -15,6 +15,9 @@
     box-shadow: 0 10px 14px rgba(225, 226, 232, 0.4);
     border-radius: 10px;
     margin-bottom: 70px;
+    @media (max-width: 1280px) {
+        padding: 30px 15px;
+    }
     @media (max-width: 576px) {
         padding: 30px 20px;
         margin: 0 15px;
@@ -164,6 +167,9 @@
         }
     }
     .calc_currency_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @media (max-width: 576px) {
             display: none;
         }
@@ -289,6 +295,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px 70px;
+    @media (max-width: 1400px) {
+        grid-gap: 35px 50px;
+    }
+    @media (max-width: 1280px) {
+        grid-gap: 35px 40px;
+        grid-template-columns: 1fr 1fr;
+    }
     @media (max-width: 990px) {
         grid-gap: 30px;
         grid-template-columns: 1fr 1fr;
@@ -335,6 +348,7 @@
     .output_btn_wrap {
         padding: 20px;
         background: #fdfaf5;
+        overflow: hidden;
         @media (max-width: 990px) {
             padding: 20px 15px;
         }
@@ -379,10 +393,14 @@
     display: grid;
     grid-template-columns: 100px 100px 100px 100px 100px 100px;
     grid-gap: 20px;
+    overflow-x: scroll;
+    width: 340px;
+    margin: 0 auto;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    overflow-x: scroll;
-    width: 350px;
+    @media (max-width: 1400px) {
+        width: 300px;
+    }
     @media (max-width: 576px) {
         width: 385px;
     }
