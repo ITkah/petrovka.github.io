@@ -18,6 +18,13 @@ $('.popup-with-zoom-anim').magnificPopup({
     mainClass: 'my-mfp-zoom-in'
 });
 
+$('.calc_output_box .multiple-items').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+});
+
 $(".modal_feedback").submit(function(e) {
     e.preventDefault();
     let form_data = $(this).serializeArray();
@@ -66,6 +73,14 @@ $(".call_filter").on("click", function(e) {
 });
 
 
-$(".js-range-slider").ionRangeSlider();
+$(".calc_more").on("click", function(e) {
+    e.preventDefault();
+    $(".calc_output_box").show();
+    $(this).remove();
+    $(".multiple-items").slick('reinit');
+});
 
+
+
+$(".js-range-slider").ionRangeSlider();
 //Документация тут http://ionden.com/a/plugins/ion.rangeSlider/start.html

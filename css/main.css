@@ -283,6 +283,7 @@ header {
           pointer-events: none;
           z-index: 9; }
         .calc_panel_wrap .calc_form_container .calc_input_wrap .calc_input_box .select_box select {
+          cursor: pointer;
           -webkit-appearance: none;
              -moz-appearance: none;
                   appearance: none;
@@ -472,6 +473,10 @@ header {
     .calc_output_wrap {
       grid-template-columns: 1fr;
       grid-gap: 20px; } }
+  .calc_output_wrap .calc_output_box:nth-child(n+6) {
+    display: block; }
+  .calc_output_wrap .calc_output_box {
+    display: none; }
   .calc_output_wrap .output_img {
     margin-bottom: 20px; }
     .calc_output_wrap .output_img img {
@@ -542,12 +547,10 @@ header {
   .calc_output_wrap ::-webkit-scrollbar-thumb {
     border-radius: 3px;
     background: #e6be81; }
+  .calc_output_wrap .slick-track {
+    margin-left: 0; }
 
 .output_slider {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  grid-gap: 20px;
-  overflow-x: scroll;
   width: 340px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -573,6 +576,33 @@ header {
     text-align: center;
     color: #a9aab1;
     font: 400 .87rem 'Montserrat', sans-serif; }
+  .output_slider .slick-next {
+    right: -15px; }
+    @media (max-width: 990px) {
+      .output_slider .slick-next {
+        right: -13px; } }
+  .output_slider .slick-prev {
+    left: -15px; }
+    @media (max-width: 990px) {
+      .output_slider .slick-prev {
+        left: -12px; } }
+  .output_slider .slick-prev.slick-disabled:before,
+  .output_slider .slick-next.slick-disabled:before {
+    display: none; }
+  .output_slider .slick-prev:before {
+    content: '';
+    background: url(../img/icon/left.svg) no-repeat center center;
+    background-size: 18px 18px;
+    height: 18px;
+    display: block;
+    width: 18px; }
+  .output_slider .slick-next:before {
+    content: '';
+    background: url(../img/icon/right.svg) no-repeat center center;
+    background-size: 18px 18px;
+    height: 18px;
+    display: block;
+    width: 18px; }
 
 .calc_more_wrpa {
   margin-top: 45px;
@@ -593,6 +623,9 @@ header {
     font: 500 .87rem 'Montserrat', sans-serif;
     letter-spacing: 0.8px;
     text-decoration: underline; }
+
+.slick-slide {
+  outline: none; }
 
 .form_feedback_wrap {
   max-width: 800px;
